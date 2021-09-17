@@ -40,7 +40,7 @@ class Config(object):
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", None)
     
     # Log channel for banning spammers
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
 
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
